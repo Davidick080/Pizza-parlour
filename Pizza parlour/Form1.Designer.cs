@@ -195,7 +195,7 @@
             // 
             this.Changeowed.BackColor = System.Drawing.Color.White;
             this.Changeowed.Font = new System.Drawing.Font("mono 07_55", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Changeowed.ForeColor = System.Drawing.Color.White;
+            this.Changeowed.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Changeowed.Location = new System.Drawing.Point(6, 428);
             this.Changeowed.Name = "Changeowed";
             this.Changeowed.Size = new System.Drawing.Size(346, 23);

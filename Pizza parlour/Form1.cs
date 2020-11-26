@@ -45,6 +45,7 @@ namespace Pizza_parlour
         Double Money;
         Double change;
         Double moneyowed;
+        Double moneycharged;
         public Form1()
         {
             InitializeComponent();
@@ -84,7 +85,17 @@ namespace Pizza_parlour
         //This is the change owed change  
         private void Change_Click(object sender, EventArgs e)
         {
-            //change=
+            try
+            {
+                Money = Convert.ToDouble(textBox3.Text);
+                moneycharged = cost;
+                moneyowed = Money - moneycharged;
+                Changeowed.Text = $"Change owed {moneyowed.ToString("c")}";
+            }
+
+
+            catch
+            { Changeowed.Text = $"not compatable"; }
         }
 
         //Second button is print recipt 
@@ -121,6 +132,14 @@ namespace Pizza_parlour
                 Thread.Sleep(1000);
                 player.Play();
                 Screen.Text+=$"\nTotal cost      {totalCost.ToString("c")} ";
+                Refresh();
+                Thread.Sleep(1000);
+                player.Play();
+                Screen.Text += $"\n\nMoney            {Money.ToString("c")}";
+                Refresh();
+                Thread.Sleep(1000);
+                player.Play();
+                Screen.Text += $"\nchange           {moneyowed.ToString("c")}";
                 Refresh();
                 Thread.Sleep(1000);
                 player.Play();
