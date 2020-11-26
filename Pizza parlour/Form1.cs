@@ -31,9 +31,12 @@ namespace Pizza_parlour
         Double Maple=50;
         int costofMaple;
         Double MoneyfromMaple;
-        //For calculator & recept 
+
+        //For calculator & recept
         Double cost;
+
         //For recept 
+
         Double amounttax;
         Double tax = 1.13;
         Double Smalltax= 0.13;
